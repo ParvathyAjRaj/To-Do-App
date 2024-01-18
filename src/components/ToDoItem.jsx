@@ -9,8 +9,9 @@ function ToDo(props){
     }    
 
     return(
-        <div onClick={handleClick}>
-            <li style={{textDecoration: isDone?"line-through":"none"}} key={props.id}>{props.todo}</li>  
+        <div >
+            <li style={{textDecoration: isDone?"line-through":"none"}} key={props.id}>{props.todo}</li>
+            <button onClick={handleClick}>Done</button>
         </div>
     )
 }
