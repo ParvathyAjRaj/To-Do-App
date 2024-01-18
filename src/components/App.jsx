@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ToDo from "./ToDoItem";
 
 function App(){
 
@@ -14,10 +15,9 @@ function App(){
         setId(id+1);
         setClicks([...clicks,{id:id,todo:item}]);
         setItem("");
+        console.log(id);
         event.preventDefault();
     }
-
-    
 
     return(
         <div>
@@ -28,10 +28,8 @@ function App(){
             </form>
             <ul>
                 {clicks.map((click)=>{
-                    return(
-                        <li key={click.id}>{click.todo}</li>
-                    )
-                    })}
+                    return(<ToDo id={click.id} todo={click.todo}/>)
+                })}
             </ul>
         </div>
     )
