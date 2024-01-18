@@ -19,6 +19,12 @@ function App(){
         event.preventDefault();
     }
 
+    function deleteItem(id){
+        setClicks(clicks.filter((item, index) => {
+              return index !== id;
+          }));
+    }
+
     return(
         <div>
             <h1>To-Do App</h1>
@@ -27,8 +33,13 @@ function App(){
                 <button onClick={handleSubmit}>Add</button>
             </form>
             <ul>
-                {clicks.map((click)=>{
-                    return(<ToDo id={click.id} todo={click.todo}/>)
+                {clicks.map((click,index)=>{
+                    return(<ToDo 
+                        key={index} 
+                        id={index} 
+                        todo={click.todo}
+                        onChecked={deleteItem}
+                        />)
                 })}
             </ul>
         </div>
