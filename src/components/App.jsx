@@ -26,23 +26,26 @@ function App(){
     }
 
     return(
-        <div>
-            <h1>To-Do App</h1>
-            <form>
-                <input onChange={handleItem} name="item" type="text" placeholder="Add item" value={item}></input>
-                <button onClick={handleSubmit}>Add</button>
+        <div className="container">
+            <h1 className="heading">To-Do App</h1>
+            <form className="form">
+                <input className="box" onChange={handleItem} name="item" type="text" placeholder="Add item" value={item}></input>
+                <button className="add" onClick={handleSubmit}>Add</button>
             </form>
-            <ul>
-                {clicks.map((click,index)=>{
-                    return(<ToDo 
-                        key={click.id}
-                        id={click.id}
-                        index={index} 
-                        todo={click.todo}
-                        onChecked={deleteItem}
-                        />)
-                })}
-            </ul>
+            <div className="allList">
+                <ul className="unorderedList">
+                    {clicks.map((click,index)=>{
+                        return(<ToDo 
+                            key={click.id}
+                            id={click.id}
+                            index={index} 
+                            todo={click.todo}
+                            onChecked={deleteItem}
+                            />)
+                    })}
+                </ul>
+            </div>
+            
         </div>
     )
 }

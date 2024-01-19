@@ -1,13 +1,132 @@
+/* phone screen */
+@media(max-width:800px){
+  .container{
+    width: 100%;
+    min-height: 500px;
+    max-width: 300px;
+    min-width: 150px;
+    height: auto;
+    border-radius: 4%;
+    font-size:10px ;
+  }
+  .box{
+    font-size: 1rem;
+  }
+  .add{
+    font-size: 1rem;
+  }
+  .eachitem{
+    font-size: 1rem;
+  }
+  .done,.delete{
+    font-size: 0.7rem;
+  }
+}
+
+/* ipad and laptop */
+@media (min-width:800px){
+  .container{
+    width: 100%;
+    min-height: 600px;
+    max-width: 1000px;
+    min-width: 500px;
+    height: auto;
+    font-size: 30px;
+    border-radius: 10%;
+  }
+  .box{
+    width: 50%;
+    height:10%;
+    font-size: 2rem;
+  }
+  .add{
+    font-size: 2rem;
+  }
+  .eachitem{
+    font-size: 2rem;
+  }
+  .done,.delete{
+    font-size: 1rem;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    background-color: #f1f5f8;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  background-color: 	#fffec8;
+  background-blend-mode: lighten;
+  padding-bottom: 5%;
+  box-shadow: 10px 10px 20px #E1C16E;
 }
+
+.heading{
+  padding-top: 10%;
+  background-color: #F0E68C;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  box-sizing: border-box;
+  background-color: transparent;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #fdcb6e;
+  font-family: "Architects Daughter", cursive;
+  color: #71797E;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.add{
+  font-family: "Architects Daughter", cursive;
+  border-radius: 10%;
+}
+
+.eachitem{
+  width: 100%;
+  font-family: "Architects Daughter", cursive;
+  padding-right: 5%;
+}
+
+.allList{
+  display: flex;
+  justify-content: center;
+}
+
+.unorderedList{
+  width:50%;
+  padding-left: 1%;
+}
+
+.list{
+  width: 100%;
+  min-width:50%;
+  padding-right: 5%;
+}
+
+.done{
+  font-family: "Architects Daughter", cursive;
+  background-color: #AFE1AF;
+  border-radius: 10%;
+}
+
+.delete{
+  margin-left: 10%;
+  font-family: "Architects Daughter", cursive;
+  background-color: #FA8072;
+  border-radius: 10%;
+}
+

@@ -14,10 +14,10 @@ function ToDo(props){
     }    
 
     return(
-        <div >
-            <li style={{textDecoration: isDone?"line-through":"none"}} key={props.id}>{props.todo}</li>
-            <button onClick={handleClick} key={props.id}>Done</button>
-            <button onClick={()=>{props.onChecked(props.index)}} key={props.id}>Delete</button>
+        <div className="eachitem">
+            <li className="list" style={{textDecoration: isDone?"line-through":"none"}} key={props.id}>{props.todo}</li>
+            <button className="done" onClick={handleClick} key={props.id}>Done</button>
+            <button className="delete" onClick={()=>{props.onChecked(props.index)}} key={props.id}>Delete</button>
             {/* <button onClick={handleDelete}>Delete</button> */}
         </div>
     )
