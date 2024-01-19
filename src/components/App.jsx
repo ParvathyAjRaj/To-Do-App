@@ -35,8 +35,9 @@ function App(){
             <ul>
                 {clicks.map((click,index)=>{
                     return(<ToDo 
-                        key={index} 
-                        id={index} 
+                        key={click.id}
+                        id={click.id}
+                        index={index} 
                         todo={click.todo}
                         onChecked={deleteItem}
                         />)

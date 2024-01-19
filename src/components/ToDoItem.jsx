@@ -17,7 +17,7 @@ function ToDo(props){
         <div >
             <li style={{textDecoration: isDone?"line-through":"none"}} key={props.id}>{props.todo}</li>
             <button onClick={handleClick} key={props.id}>Done</button>
-            <button onClick={()=>{props.onChecked(props.id)}} key={props.id}>Delete</button>
+            <button onClick={()=>{props.onChecked(props.index)}} key={props.id}>Delete</button>
             {/* <button onClick={handleDelete}>Delete</button> */}
         </div>
     )
