@@ -22,5 +22,5 @@ How to run the code:
 
 Result :  You will be redirected to "http://localhost:3000/"
 <br>
-<img src="./public/images/ToDo_1.png" width=50% height=50%>
+<img src="./public/images/ToDo.png" width=50% height=50%>
 

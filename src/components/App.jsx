@@ -27,7 +27,7 @@ function App(){
 
     return(
         <div className="container">
-            <h1 className="heading">To-Do App</h1>
+            <h1 className="heading">To-Do List</h1>
             <form className="form">
                 <input className="box" onChange={handleItem} name="item" type="text" placeholder="Add item" value={item}></input>
                 <button className="add" onClick={handleSubmit}>Add</button>
