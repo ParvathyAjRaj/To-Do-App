@@ -20,7 +20,5 @@ How to run the code:
 
 </ol>
 
-Result :  You will be redirected to "http://localhost:3000/"
-<br>
-<img src="./public/images/ToDo.png" width=50% height=50%>
+Do you want to try my to-do-list app? Why wait? Try [here](https://to-do-app-livid-seven.vercel.app/)
 
